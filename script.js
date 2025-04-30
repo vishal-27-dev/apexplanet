@@ -1,19 +1,18 @@
 // Wait for the HTML document to be fully loaded before running the script
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Get a reference to the button element using its ID
-    const myButton = document.getElementById('alertButton');
+    // Get the button element by its ID
+    const alertButton = document.getElementById('alertButton');
 
-    // Check if the button was actually found
-    if (myButton) {
-        // Add an event listener to the button
-        // This function will run when the button is clicked
-        myButton.addEventListener('click', function() {
-            // Show a simple alert message in the browser
-            alert('Thanks for checking out Vis Recommendations! More features coming soon.');
+    // Check if the button exists to avoid errors
+    if (alertButton) {
+        // Add an event listener to the button that triggers on 'click'
+        alertButton.addEventListener('click', function() {
+            // Show a simple alert message when the button is clicked
+            alert('Welcome to Vis Recommendations! Enjoy exploring.');
         });
     } else {
-        console.error("Button with ID 'alertButton' not found!"); // Log an error if button doesn't exist
+        console.error("Button with ID 'alertButton' not found.");
     }
 
 });
