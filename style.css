@@ -1,58 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vis Recommendations</title>
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <header>
-        <h1>Vis Recommendations</h1>
-        <p>Your simple guide to Bollywood Movies and Web Series</p>
-    </header>
+/* Body Styling */
+body {
+    background-color: #000000; /* Pitch Black */
+    color: #e0e0e0; /* Light grey text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif font */
+    line-height: 1.6;
+}
 
-    <main>
-        <section class="category">
-            <h2>Popular Movies</h2>
-            <div class="item">
-                <h3>3 Idiots</h3>
-                <p>Genre: Comedy, Drama | A timeless story of friendship and chasing excellence.</p>
-            </div>
-            <div class="item">
-                <h3>RRR</h3>
-                <p>Genre: Action, Drama | Epic historical fiction with stunning visuals.</p>
-            </div>
-             <div class="item">
-                <h3>Pathaan</h3>
-                <p>Genre: Action, Thriller | A high-octane spy thriller.</p>
-            </div>
-        </section>
+/* Header Styling */
+header {
+    background-color: #1a1a1a; /* Slightly lighter dark shade */
+    color: #fca311; /* A contrasting accent color (e.g., orange/yellow) */
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #fca311;
+}
 
-        <section class="category">
-            <h2>Top Web Series</h2>
-            <div class="item">
-                <h3>Mirzapur</h3>
-                <p>Genre: Crime, Thriller | A gritty tale of power and gangsters.</p>
-            </div>
-            <div class="item">
-                <h3>Sacred Games</h3>
-                <p>Genre: Crime, Thriller, Mystery | A gripping race against time in Mumbai.</p>
-            </div>
-            <div class="item">
-                <h3>Panchayat</h3>
-                <p>Genre: Comedy, Drama | A light-hearted look at rural life in India.</p>
-            </div>
-        </section>
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
 
-        <section class="interaction">
-            <button id="alertButton">Click for a Message!</button>
-        </section>
-    </main>
+header h2 {
+    font-size: 1.2em;
+    color: #cccccc; /* Lighter grey for subtitle */
+    font-weight: normal;
+}
 
-    <!-- Link to the JavaScript file (at the end of body) -->
-    <script src="script.js"></script>
-</body>
-</html>
+/* Main Content Grid Container */
+.recommendation-container {
+    display: grid;
+    /* Create responsive columns: min 220px wide, max 1fr (fill space) */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px; /* Space between cards */
+    padding: 0 30px; /* Padding on the sides of the container */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual Recommendation Card Styling */
+.recommendation-card {
+    background-color: #141414; /* Dark card background */
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Keep image corners rounded */
+    display: flex;
+    flex-direction: column; /* Stack image above details */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(252, 163, 17, 0.2); /* Subtle glow with accent color */
+}
+
+/* Card Image Styling */
+.recommendation-card img {
+    width: 100%;
+    height: 330px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area without distortion */
+    display: block; /* Remove extra space below image */
+    border-bottom: 1px solid #333; /* Separator line */
+}
+
+/* Card Details Section */
+.movie-details {
+    padding: 15px;
+    flex-grow: 1; /* Allow details to take remaining space if needed */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title Styling */
+.movie-details h3 {
+    color: #ffffff; /* White title */
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+/* Rating Styling (IMDb Yellow) */
+.movie-details .rating {
+    color: #f5c518;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+/* Metadata (Genre, Age, Year) Styling */
+.movie-details .metadata {
+    font-size: 0.9em;
+    color: #aaaaaa; /* Lighter grey */
+    margin-bottom: 5px;
+}
+
+/* Rank/Info Styling */
+.movie-details .rank {
+    font-size: 0.85em;
+    color: #888888;
+    margin-top: auto; /* Push to bottom if card height varies slightly */
+}
+
+/* Task 1 JS Interaction Button Styling */
+.interaction-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#alertButton {
+    padding: 12px 25px;
+    background-color: #fca311; /* Accent color */
+    color: #000000; /* Black text on button */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#alertButton:hover {
+    background-color: #e0900a; /* Slightly darker shade on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9em;
+    border-top: 1px solid #222;
+}
