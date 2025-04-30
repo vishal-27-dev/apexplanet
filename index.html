@@ -3,76 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1: Basics of Web Development</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Vis Recommendations - Bollywood</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to our CSS file -->
 </head>
 <body>
 
     <header>
-        <h1>Task 1: Basics of Web Development</h1>
+        <h1>Vis Recommendations</h1>
+        <p>Your quick guide to trending Bollywood movies and web series.</p>
     </header>
 
     <main>
-        <section id="objective">
-            <h2>Objective</h2>
-            <p>Learn and apply foundational HTML, CSS, and JavaScript concepts.</p>
+        <section id="movies">
+            <h2>Movies</h2>
+            <div class="item-list">
+                <!-- Movie 1 -->
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Pathaan_film_poster.jpg/220px-Pathaan_film_poster.jpg" alt="Pathaan Poster" class="poster">
+                    <h3>Pathaan (2023)</h3>
+                    <p>Genre: Action, Thriller</p>
+                    <a href="#">View Details</a> <!-- Placeholder link -->
+                </div>
+
+                <!-- Movie 2 -->
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Jawan_film_poster.jpg/220px-Jawan_film_poster.jpg" alt="Jawan Poster" class="poster">
+                    <h3>Jawan (2023)</h3>
+                    <p>Genre: Action, Thriller</p>
+                    <a href="#">View Details</a> <!-- Placeholder link -->
+                </div>
+
+                <!-- Movie 3 -->
+                <div class="item">
+                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Rocky_Aur_Rani_Ki_Prem_Kahani_poster.jpg/220px-Rocky_Aur_Rani_Ki_Prem_Kahani_poster.jpg" alt="Rocky Aur Rani Kii Prem Kahaani Poster" class="poster">
+                    <h3>Rocky Aur Rani Kii Prem Kahaani (2023)</h3>
+                    <p>Genre: Romance, Drama, Comedy</p>
+                    <a href="#">View Details</a> <!-- Placeholder link -->
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <section id="web-series">
+            <h2>Web Series</h2>
+            <div class="item-list">
+                <!-- Web Series 1 -->
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Poster_of_Mirzapur_2018.jpg/220px-Poster_of_Mirzapur_2018.jpg" alt="Mirzapur Poster" class="poster">
+                    <h3>Mirzapur (2018-Present)</h3>
+                    <p>Genre: Crime, Thriller</p>
+                    <a href="#">View Details</a> <!-- Placeholder link -->
+                </div>
 
-        <section id="html-section">
-            <h2>1. Create a Simple Webpage Using HTML</h2>
-            <p>This section demonstrates basic HTML elements like headings, paragraphs, images, and links.</p>
-
-            <h3>Example Heading (h3)</h3>
-            <p>This is a paragraph providing some descriptive text about the HTML structure.</p>
-
-            <!-- Example Image -->
-            <img src="https://via.placeholder.com/150x80.png?text=HTML+Image" alt="Placeholder HTML image" class="example-image">
-            
-            <!-- Example Link -->
-            <p>Here is a link to learn more about HTML:
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
-            </p>
-             <ul>
-                <li>This is an item in an unordered list.</li>
-                <li>Another item.</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="css-section">
-            <h2>2. Style the Webpage Using CSS</h2>
-            <p>CSS (Cascading Style Sheets) is used to add visual style. We've linked an external <code>style.css</code> file in the <code><head></code> section.</p>
-            <p>In the CSS file, we've added rules for:</p>
-            <ul>
-                <li>Colors (background, text)</li>
-                <li>Fonts (family, size)</li>
-                <li>Spacing (margins, padding)</li>
-                <li>Basic Layout adjustments</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section id="javascript-section">
-            <h2>3. Add Basic JavaScript for Interactivity</h2>
-            <p>JavaScript allows us to add dynamic behavior. Click the button below!</p>
-
-            <!-- Example Button for JS interaction -->
-            <button id="interactiveButton">Click Me!</button>
-            <p id="messageArea" class="message-hidden">You clicked the button!</p> <!-- Added message area -->
+                <!-- Web Series 2 -->
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/The_Family_Man.jpeg/220px-The_Family_Man.jpeg" alt="The Family Man Poster" class="poster">
+                    <h3>The Family Man (2019-Present)</h3>
+                    <p>Genre: Action, Comedy, Drama</p>
+                    <a href="#">View Details</a> <!-- Placeholder link -->
+                </div>
+                 <!-- Web Series 3 -->
+                <div class="item">
+                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Panchayat_logo.jpg/220px-Panchayat_logo.jpg" alt="Panchayat Poster" class="poster">
+                     <h3>Panchayat (2020-Present)</h3>
+                    <p>Genre: Comedy, Drama</p>
+                    <a href="#">View Details</a> <!-- Placeholder link -->
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>End of Task 1 Demonstration Page.</p>
+        <p>© 2024 Vis Recommendations. Basic structure demo.</p>
     </footer>
 
-    <!-- Link to the external JavaScript file -->
-    <!-- Placed at the end of body for faster perceived page load -->
-    <script src="script.js"></script>
 </body>
 </html>
