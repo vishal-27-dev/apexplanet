@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add an event listener to the button that triggers on 'click'
         alertButton.addEventListener('click', function() {
             // Show a simple alert message when the button is clicked
-            alert('Welcome to Vis Recommendations! Enjoy exploring.');
+            alert('Thank you for your feedback!'); // Changed alert message slightly
         });
     } else {
         console.error("Button with ID 'alertButton' not found.");
