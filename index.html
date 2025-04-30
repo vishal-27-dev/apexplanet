@@ -4,55 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vis Recommendations</title>
-    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Vis Recommendations</h1>
-        <p>Your simple guide to Bollywood Movies and Web Series</p>
+        <h2>Your Bollywood & Web Series Hub</h2>
     </header>
 
-    <main>
-        <section class="category">
-            <h2>Popular Movies</h2>
-            <div class="item">
+    <main class="recommendation-container">
+
+        <!-- Item 1: 3 Idiots -->
+        <div class="recommendation-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg" alt="3 Idiots Poster">
+            <div class="movie-details">
                 <h3>3 Idiots</h3>
-                <p>Genre: Comedy, Drama | A timeless story of friendship and chasing excellence.</p>
+                <p class="rating">⭐ 8.4/10</p>
+                <p class="metadata">Comedy/Drama | PG-13 | 2009</p>
+                <p class="rank">Rank: #96 (IMDb Top 250)</p>
             </div>
-            <div class="item">
-                <h3>RRR</h3>
-                <p>Genre: Action, Drama | Epic historical fiction with stunning visuals.</p>
-            </div>
-             <div class="item">
-                <h3>Pathaan</h3>
-                <p>Genre: Action, Thriller | A high-octane spy thriller.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="category">
-            <h2>Top Web Series</h2>
-            <div class="item">
-                <h3>Mirzapur</h3>
-                <p>Genre: Crime, Thriller | A gritty tale of power and gangsters.</p>
-            </div>
-            <div class="item">
+        <!-- Item 2: Sacred Games -->
+        <div class="recommendation-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjJlMjJlMzYtNmU5NS00NTVjLWIyNDYtNzQ2YjIyYjUyMWMyXkEyXkFqcGdeQXVyOTE2Nzg0Mjk@._V1_FMjpg_UX1000_.jpg" alt="Sacred Games Poster">
+            <div class="movie-details">
                 <h3>Sacred Games</h3>
-                <p>Genre: Crime, Thriller, Mystery | A gripping race against time in Mumbai.</p>
+                <p class="rating">⭐ 8.5/10</p>
+                <p class="metadata">Crime/Drama/Thriller | TV-MA | 2018-2019</p>
+                <p class="rank">Web Series</p> <!-- Using Rank field differently -->
             </div>
-            <div class="item">
-                <h3>Panchayat</h3>
-                <p>Genre: Comedy, Drama | A light-hearted look at rural life in India.</p>
-            </div>
-        </section>
+        </div>
 
-        <section class="interaction">
-            <button id="alertButton">Click for a Message!</button>
-        </section>
+        <!-- Item 3: Mirzapur -->
+        <div class="recommendation-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGNhNTEzYTItZmEwYS00NDA1LWF KNi2LTEzMWU4N2RjZjVhXkEyXkFqcGdeQXVyODg0NjM3MQ@@._V1_FMjpg_UX1000_.jpg" alt="Mirzapur Poster">
+             <!-- Note: IMDb image links might break. You might need to download and host them yourself for reliability -->
+            <div class="movie-details">
+                <h3>Mirzapur</h3>
+                <p class="rating">⭐ 8.5/10</p>
+                <p class="metadata">Action/Crime/Drama | TV-MA | 2018-Present</p>
+                 <p class="rank">Web Series</p>
+            </div>
+        </div>
+
+        <!-- Item 4: Lagaan -->
+        <div class="recommendation-card">
+             <img src="https://m.media-amazon.com/images/M/MV5BNjYwNTAwNzc4Nl5BMl5BanBnXkFtZTcwNTg5TryMzdiIlQ@@._V1_FMjpg_UX1000_.jpg" alt="Lagaan Poster">
+            <div class="movie-details">
+                <h3>Lagaan: Once Upon a Time in India</h3>
+                <p class="rating">⭐ 8.1/10</p>
+                <p class="metadata">Adventure/Drama/Musical | PG | 2001</p>
+                <p class="rank">Rank: Oscar Nominee</p>
+            </div>
+        </div>
+
+         <!-- Add more movie/series cards here following the same structure -->
+
     </main>
 
-    <!-- Link to the JavaScript file (at the end of body) -->
+    <!-- Task 1 JS Requirement: Simple Interaction Button -->
+    <div class="interaction-section">
+        <button id="alertButton">Click for a Greeting!</button>
+    </div>
+
+    <footer>
+        <p>© 2023 Vis Recommendations - Bollywood Favorites</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
